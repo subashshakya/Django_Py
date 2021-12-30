@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block 'content' %}
+<h1>Calculation of Average of Two Numbers</h1>
+    <div class="container">
+        <form action = "{% url 'recieve' %}">
+            <h2>Enter first number:   </h2><input type="text" class="numbers" name="num1">
+            <h2>Enter second number:   </h2><input type="text" class="numbers" name="num2">
+            <button type="submit">Find Average</button>
+            <br>
+            <br>
+            <h2>Assignment Weak:2</h2>
+        </form>
+    </div>
+{% endblock 'content' %}
